@@ -55,18 +55,18 @@ export const Footer = () => {
           {/* Right Giant Contact Triggers */}
           <div className="flex flex-col items-end self-end lg:self-center">
             <motion.a 
-              href="tel:+94764220899"
+              href="tel:+94705852167"
               whileHover={{ scale: 1.05, rotate: -2 }}
               className="font-handwriting text-4xl md:text-5xl lg:text-[3.5rem] tracking-tight font-bold text-primary hover:text-indigo-700 transition-colors transform -rotate-3 mb-2 drop-shadow-sm inline-block"
             >
-              (+94) 76 422 0899
+              (+94) 70 585 2167
             </motion.a>
             <motion.a 
-              href="mailto:Dahamsachintha66@gmail.com"
+              href="mailto:liyanagesanju36@gmail.com"
               whileHover={{ scale: 1.05, rotate: 1 }}
               className="font-comic tracking-widest text-2xl md:text-3xl lg:text-4xl text-ink hover:text-slate-700 transition-colors transform rotate-1 drop-shadow-sm inline-block"
             >
-              Dahamsachintha66@gmail.com
+              liyanagesanju36@gmail.com
             </motion.a>
           </div>
         </div>
@@ -75,8 +75,8 @@ export const Footer = () => {
       {/* Bottom Legal / Nav Strip */}
       <div className="relative z-20 w-full px-6 md:px-12 py-6 flex flex-col md:flex-row justify-between items-center text-sm font-bold text-slate-500 font-sans border-t border-slate-200/30 gap-6 backdrop-blur-md bg-white/10">
         <div className="flex items-center gap-2">
-          <span className="font-handwriting text-xl text-primary font-bold">sachintha</span>
-          <span className="font-comic text-xl text-ink tracking-widest pt-1">DAHAM</span>
+          <span className="font-handwriting text-xl text-primary font-bold">sanjuka</span>
+          <span className="font-comic text-xl text-ink tracking-widest pt-1">LIYANAGE</span>
         </div>
         
         <div className="flex gap-8">
@@ -86,7 +86,7 @@ export const Footer = () => {
         </div>
 
         <div>
-          ©2026 SACHINTHA DAHAM
+          ©2026 SANJUKA LIYANAGE
         </div>
       </div>
 
