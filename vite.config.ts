@@ -41,14 +41,14 @@ export default defineConfig(({ mode }) => {
                 //  reply_to: visitor's email    (so you can reply directly to them)
                 const result = await resend.emails.send({
                   from: 'onboarding@resend.dev',
-                  to: ['dahamsachintha66@gmail.com'],
+                  to: ['liyanagesanju36@gmail.com'],
                   replyTo: email,
                   subject: `[Portfolio] ${name} says: ${message.slice(0, 50)}...`,
                   html: `
                     <div style="font-family:Inter,sans-serif;max-width:600px;margin:0 auto;border-radius:16px;overflow:hidden;border:1px solid #e2e8f0;">
                       <div style="background:linear-gradient(135deg,#4338ca,#0d9488);padding:32px;color:white;">
                         <h1 style="margin:0;font-size:22px;font-weight:800;">ðŸ“¬ New Portfolio Message</h1>
-                        <p style="margin:6px 0 0;opacity:0.8;font-size:13px;">via sachinthadaham.dev contact form</p>
+                        <p style="margin:6px 0 0;opacity:0.8;font-size:13px;">via sanjukaliyanage.dev contact form</p>
                       </div>
                       <div style="padding:32px;background:#fff;">
                         <table style="width:100%;border-collapse:collapse;">
@@ -70,7 +70,7 @@ export default defineConfig(({ mode }) => {
                         </a>
                       </div>
                       <div style="padding:14px 32px;background:#f8fafc;border-top:1px solid #e2e8f0;font-size:12px;color:#94a3b8;text-align:center;">
-                        Sachintha Daham Portfolio Â· Powered by Resend
+                        Sanjuka Liyanage Portfolio · Powered by Resend
                       </div>
                     </div>
                   `,

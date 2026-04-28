@@ -16,13 +16,13 @@ export default async function handler(req: any, res: any) {
   try {
     await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'Dahamsachintha66@gmail.com',
+      to: 'liyanagesanju36@gmail.com',
       subject: `Portfolio Message from ${name}`,
       html: `
         <div style="font-family: Inter, sans-serif; max-width: 600px; margin: 0 auto; background: #f8fafc; border-radius: 16px; overflow: hidden;">
           <div style="background: linear-gradient(135deg, #4338ca, #0d9488); padding: 32px; color: white;">
             <h1 style="margin: 0; font-size: 24px; font-weight: 800;">New Portfolio Message 🚀</h1>
-            <p style="margin: 8px 0 0; opacity: 0.85; font-size: 14px;">Received via sachinthadaham.dev</p>
+            <p style="margin: 8px 0 0; opacity: 0.85; font-size: 14px;">Received via sanjukaliyanage.dev</p>
           </div>
           <div style="padding: 32px; background: white;">
             <table style="width: 100%; border-collapse: collapse;">
