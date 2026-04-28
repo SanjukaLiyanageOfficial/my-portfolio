@@ -1,7 +1,7 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#6C3AED"/>
+      <stop offset="0%" style="stop-color:#6366F1"/>
       <stop offset="50%" style="stop-color:#7C3AED"/>
       <stop offset="100%" style="stop-color:#4F46E5"/>
     </linearGradient>
@@ -10,9 +10,14 @@
       <stop offset="100%" style="stop-color:rgba(255,255,255,0)"/>
     </linearGradient>
   </defs>
+  <!-- Rounded square background -->
   <rect width="64" height="64" rx="14" ry="14" fill="url(#bg)"/>
-  <rect width="64" height="32" rx="14" ry="14" fill="url(#shine)" opacity="0.4"/>
-  <path d="M14 18 C14 18 26 14 26 22 C26 28 15 27 15 33 C15 39 26 38 28 36" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M30 16 L30 48 C30 48 50 48 50 32 C50 16 30 16 30 16 Z" stroke="white" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M28 36 Q32 40 30 44" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <!-- Shine overlay -->
+  <rect width="64" height="32" rx="14" ry="14" fill="url(#shine)" opacity="0.35"/>
+  <!-- S -->
+  <path d="M10 20 C10 17 13 15 18 15 C23 15 26 17 26 20 C26 23 22 24.5 18 26 C13.5 27.5 10 29 10 33 C10 37 13 39 18 39 C23 39 26 37 26 34"
+        stroke="white" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- L -->
+  <path d="M33 15 L33 39" stroke="white" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <path d="M33 39 L52 39" stroke="white" stroke-width="4.5" stroke-linecap="round" fill="none"/>
 </svg>
