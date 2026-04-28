@@ -37,18 +37,18 @@ export const Footer = () => {
           {/* Right Contact Details */}
           <div className="w-full md:w-1/2 flex flex-col items-center md:items-end gap-6 pb-20">
             <motion.a 
-              href="tel:+94764220899"
+              href="tel:+94705852167"
               whileHover={{ scale: 1.05, rotate: -2 }}
               className="font-handwriting text-4xl md:text-5xl lg:text-[4rem] text-primary hover:text-indigo-700 transition-colors transform rotate-[-2deg] drop-shadow-md"
             >
-              (+94) 76 422 0899
+              (+94) 70 585 2167
             </motion.a>
             <motion.a 
-              href="mailto:Dahamsachintha66@gmail.com"
+              href="mailto:liyanagesanju36@gmail.com"
               whileHover={{ scale: 1.02 }}
               className="font-comic tracking-widest text-2xl md:text-3xl lg:text-4xl text-ink hover:text-slate-800 transition-colors uppercase drop-shadow-md"
             >
-              DAHAMSACHINTHA66@GMAIL.COM
+              LIYANAGESANJU36@GMAIL.COM
             </motion.a>
           </div>
 
@@ -58,8 +58,8 @@ export const Footer = () => {
       {/* Bottom Nav Strip */}
       <div className="absolute bottom-0 inset-x-0 z-20 w-full px-6 md:px-12 py-6 flex flex-col md:flex-row justify-between items-center text-xs font-bold text-slate-500 font-sans border-t border-white/30 backdrop-blur-md bg-white/20 gap-4">
         <div className="flex items-center gap-2">
-          <span className="font-handwriting text-lg text-primary font-bold">sachintha</span>
-          <span className="font-comic text-lg text-ink tracking-widest pt-1">DAHAM</span>
+          <span className="font-handwriting text-lg text-primary font-bold">sanjuka</span>
+          <span className="font-comic text-lg text-ink tracking-widest pt-1">LIYANAGE</span>
         </div>
         
         <div className="flex gap-8">
@@ -69,7 +69,7 @@ export const Footer = () => {
         </div>
 
         <div>
-          ©2026 SACHINTHA DAHAM
+          ©2026 SANJUKA LIYANAGE
         </div>
       </div>
 

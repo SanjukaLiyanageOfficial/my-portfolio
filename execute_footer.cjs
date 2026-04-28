@@ -50,22 +50,22 @@ export const Footer = () => {
                   <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> Direct Line
                 </span>
                 <motion.a 
-                  href="tel:+94764220899"
+                  href="tel:+94705852167"
                   whileHover={{ scale: 1.02, x: -5 }}
                   className="font-handwriting text-4xl md:text-5xl lg:text-[4rem] text-white group-hover/contact:text-cyan-300 transition-colors duration-300 transform -rotate-2 drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]"
                 >
-                  (+94) 76 422 0899
+                  (+94) 70 585 2167
                 </motion.a>
               </div>
 
               <div className="flex flex-col lg:items-end group/email cursor-pointer mt-4">
                 <span className="text-slate-500 text-sm font-bold tracking-widest uppercase mb-2">Secure Link</span>
                 <motion.a 
-                  href="mailto:Dahamsachintha66@gmail.com"
+                  href="mailto:liyanagesanju36@gmail.com"
                   whileHover={{ scale: 1.02, x: -5 }}
                   className="font-comic tracking-widest text-2xl md:text-3xl lg:text-4xl text-slate-300 group-hover/email:text-white transition-colors duration-300 transform rotate-1 bg-white/5 px-6 py-4 rounded-xl border border-white/10 group-hover/email:border-white/30"
                 >
-                  DAHAMSACHINTHA66@GMAIL.COM
+                  LIYANAGESANJU36@GMAIL.COM
                 </motion.a>
               </div>
 
@@ -78,8 +78,8 @@ export const Footer = () => {
       {/* Bottom Minimalist Status Bar */}
       <div className="relative z-20 w-full px-6 md:px-12 py-6 flex flex-col md:flex-row justify-between items-center text-xs font-bold text-slate-500 font-sans border-t border-white/10 gap-6 bg-[#050505]">
         <div className="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-500">
-          <span className="font-handwriting text-lg text-white font-bold">sachintha</span>
-          <span className="font-comic text-lg text-slate-300 tracking-widest pt-1">DAHAM</span>
+          <span className="font-handwriting text-lg text-white font-bold">sanjuka</span>
+          <span className="font-comic text-lg text-slate-300 tracking-widest pt-1">LIYANAGE</span>
         </div>
         
         <div className="flex gap-8 uppercase tracking-widest">

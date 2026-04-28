@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 
 // 1. Philosophy Fix
 let phi = fs.readFileSync('src/components/Philosophy.tsx', 'utf8');
@@ -26,7 +26,7 @@ const projects = [
     tech: ["NestJS", "React", "Docker", "Kubernetes", "Azure AKS", "ArgoCD", "API Gateway", "MongoDB"],
     gradient: "from-indigo-600 via-purple-600 to-indigo-600",
     glow: "rgba(79, 70, 229, 0.4)",
-    github: "https://github.com/SachinthaDaham/Library-Manager-Microservices",
+    github: "https://github.com/SanjukaLiyanageOfficial/Library-Manager-Microservices",
   },
   {
     title: "CocoSmart — Coconut Intelligence Platform",
@@ -40,7 +40,7 @@ const projects = [
     tech: ["Flutter", "React", "Python", "CNN/TensorFlow", "IoT", "Firebase"],
     gradient: "from-emerald-500 via-green-500 to-emerald-500",
     glow: "rgba(16, 185, 129, 0.4)",
-    github: "https://github.com/SachinthaDaham/cocosmartapp",
+    github: "https://github.com/SanjukaLiyanageOfficial/cocosmartapp",
   },
   {
     title: "Prana Yoga Management System",
@@ -54,7 +54,7 @@ const projects = [
     tech: ["MERN", ".NET Core", "Ocelot", "Dapper", "Kubernetes"],
     gradient: "from-pink-600 via-rose-500 to-pink-600",
     glow: "rgba(236, 72, 153, 0.4)",
-    github: "https://github.com/SachinthaDaham/prana",
+    github: "https://github.com/SanjukaLiyanageOfficial/prana",
   },
   {
     title: "Formula 1 Live Hub",
@@ -68,7 +68,7 @@ const projects = [
     tech: ["React", "Docker", "Kubernetes", "AWS", "ArgoCD", "AWS RDS"],
     gradient: "from-red-600 via-orange-600 to-red-600",
     glow: "rgba(239, 68, 68, 0.4)",
-    github: "https://github.com/SachinthaDaham/Fomula-1-WebSite-",
+    github: "https://github.com/SanjukaLiyanageOfficial/Formula-1-WebSite",
   },
   {
     title: "PetHub Petcare App",
@@ -82,7 +82,7 @@ const projects = [
     tech: ["Flutter", "Dart", "Firebase", "Auth"],
     gradient: "from-violet-600 via-fuchsia-600 to-violet-600",
     glow: "rgba(139, 92, 246, 0.4)",
-    github: "https://github.com/SachinthaDaham/PETHUB",
+    github: "https://github.com/SanjukaLiyanageOfficial/PETHUB",
   },
 ];
 
