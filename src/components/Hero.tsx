@@ -59,10 +59,10 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.05, ease: 'easeOut' }}
           className="flex flex-col mb-2 relative z-10"
         >
-          <span className="font-handwriting text-5xl md:text-7xl lg:text-[6.5rem] text-primary font-bold -mb-3 pr-3 md:pr-4 pl-1 z-20 drop-shadow-sm">
+          <span className="font-handwriting text-3xl sm:text-5xl md:text-7xl lg:text-[6.5rem] text-primary font-bold -mb-3 pr-3 md:pr-4 pl-1 z-20 drop-shadow-sm">
             aspiring
           </span>
-          <span className="relative font-comic tracking-widest text-[3.8rem] md:text-[5.5rem] lg:text-[7.5rem] leading-none pt-3 text-shimmer">
+          <span className="relative font-comic tracking-widest text-[2rem] sm:text-[3.2rem] md:text-[5rem] lg:text-[7.5rem] leading-none pt-3 text-shimmer">
             SOFTWARE ENGINEER
             <motion.div
               initial={{ width: 0 }}
@@ -152,14 +152,13 @@ export const Hero = () => {
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
-        className="z-10 mt-14 lg:mt-0 lg:w-[42%] flex justify-center items-center relative select-none"
-        style={{ minHeight: '500px' }}
+        className="z-10 mt-6 lg:mt-0 lg:w-[42%] flex justify-center items-center relative select-none min-h-[280px] sm:min-h-[360px] lg:min-h-[500px]"
       >
         {/* Outer slow-rotating glow ring */}
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-          className="absolute w-[420px] h-[420px] rounded-full pointer-events-none"
+          className="absolute w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] lg:w-[420px] lg:h-[420px] rounded-full pointer-events-none"
           style={{
             background: 'conic-gradient(from 0deg, transparent 60%, rgba(99,102,241,0.35) 80%, transparent 100%)',
             filter: 'blur(2px)',
@@ -169,7 +168,7 @@ export const Hero = () => {
         <motion.div
           animate={{ rotate: -360 }}
           transition={{ duration: 14, repeat: Infinity, ease: 'linear' }}
-          className="absolute w-[360px] h-[360px] rounded-full pointer-events-none"
+          className="absolute w-[180px] h-[180px] sm:w-[270px] sm:h-[270px] lg:w-[360px] lg:h-[360px] rounded-full pointer-events-none"
           style={{
             background: 'conic-gradient(from 180deg, transparent 65%, rgba(13,148,136,0.3) 85%, transparent 100%)',
             filter: 'blur(2px)',
@@ -205,7 +204,7 @@ export const Hero = () => {
         <motion.img
           src={profileImg}
           alt="Sanjuka Liyanage"
-          className="relative z-10 w-72 lg:w-[340px] object-contain"
+          className="relative z-10 w-48 sm:w-64 lg:w-[340px] object-contain"
           style={{ filter: 'drop-shadow(0 20px 60px rgba(99,102,241,0.25))' }}
           animate={{ y: [0, -8, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}

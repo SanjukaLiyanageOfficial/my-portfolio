@@ -20,7 +20,7 @@ export const Philosophy = () => {
               <div className="h-px w-8 bg-primary" />
               <span className="text-xs font-bold text-primary uppercase tracking-[0.2em] font-mono">About Me</span>
             </motion.div>
-            <h2 className="text-5xl font-comic text-ink dark:text-white tracking-wide uppercase drop-shadow-sm">WHO I AM</h2>
+            <h2 className="text-3xl sm:text-5xl font-comic text-ink dark:text-white tracking-wide uppercase drop-shadow-sm">WHO I AM</h2>
           </div>
         </div>
 

@@ -67,7 +67,7 @@ export const Experience = () => (
           <div className="h-px w-8 bg-primary" />
           <span className="text-xs font-bold text-primary uppercase tracking-[0.2em] font-mono">Career & Education</span>
         </motion.div>
-        <motion.h2 initial={{ opacity:0,y:16 }} whileInView={{ opacity:1,y:0 }} viewport={{ once:false, margin:"-50px" }} className="text-5xl md:text-6xl font-bold tracking-tight mb-4">
+        <motion.h2 initial={{ opacity:0,y:16 }} whileInView={{ opacity:1,y:0 }} viewport={{ once:false, margin:"-50px" }} className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4">
           <span className="font-handwriting text-primary pr-3 md:pr-4">my professional</span>{" "}
           <span className="font-comic tracking-widest text-ink dark:text-white uppercase">TRAJECTORY</span>
         </motion.h2>
