@@ -8,13 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#4338ca',
-        secondary: '#0d9488',
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
         accent: '#f43f5e',
         surface: '#ffffff',
-        subtle: '#f8fafc',
+        subtle: 'var(--bg-subtle)',
         mute: '#94a3b8',
-        ink: '#0f172a',
+        ink: 'var(--ink)',
         canvas: '#ffffff',
       },
       fontFamily: {
@@ -25,8 +25,8 @@ export default {
         comic: ['Bangers', 'cursive'],
       },
       boxShadow: {
-        saas: '0 1px 3px rgba(0,0,0,0.05), 0 10px 40px -10px rgba(67,56,202,0.08)',
-        'saas-hover': '0 4px 6px rgba(0,0,0,0.05), 0 20px 40px -10px rgba(67,56,202,0.15)',
+        saas: '0 1px 3px rgba(0,0,0,0.05), 0 10px 40px -10px rgba(2,132,199,0.08)',
+        'saas-hover': '0 4px 6px rgba(0,0,0,0.05), 0 20px 40px -10px rgba(2,132,199,0.16)',
       },
       animation: {
         'gradient-x': 'gradient-x 3s ease infinite',

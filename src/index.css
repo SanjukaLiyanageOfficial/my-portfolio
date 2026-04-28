@@ -5,14 +5,19 @@
 @tailwind utilities;
 
 @layer base {
+  /* ── LIGHT MODE – unique Sky Blue + Amber palette ── */
   :root {
-    --bg: #ffffff;
-    --bg-subtle: #f8fafc;
-    --ink: #0f172a;
-    --ink-muted: #64748b;
-    --border: #e2e8f0;
+    --bg: #fafeff;
+    --bg-subtle: #f0f9ff;
+    --ink: #0c1a2e;
+    --ink-muted: #475569;
+    --border: #bae6fd;
     --card: #ffffff;
+    --primary: #0284c7;
+    --secondary: #f59e0b;
   }
+
+  /* ── DARK MODE – unchanged from original ── */
   .dark {
     --bg: #0a0f1e;
     --bg-subtle: #0f172a;
@@ -20,6 +25,8 @@
     --ink-muted: #94a3b8;
     --border: #1e293b;
     --card: #111827;
+    --primary: #4338ca;
+    --secondary: #0d9488;
   }
 
   body {
@@ -29,15 +36,19 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   html { scroll-behavior: smooth; }
-  ::selection { background: #4338ca; color: white; }
+
+  /* Light mode: sky blue selection */
+  ::selection { background: #0284c7; color: white; }
+  /* Dark mode: original indigo selection */
+  .dark ::selection { background: #4338ca; color: white; }
 }
 
 /* ─── Card Systems ─── */
 .saas-card {
-  @apply bg-white dark:bg-[#111827] border border-slate-100 dark:border-slate-800 rounded-2xl shadow-saas transition-all duration-300;
+  @apply bg-white dark:bg-[#111827] border border-sky-100 dark:border-slate-800 rounded-2xl shadow-saas transition-all duration-300;
 }
 .saas-card:hover {
-  @apply shadow-saas-hover -translate-y-1 border-indigo-100 dark:border-indigo-900;
+  @apply shadow-saas-hover -translate-y-1 border-sky-200 dark:border-indigo-900;
 }
 .gradient-card {
   background: var(--card);
@@ -46,7 +57,13 @@
   overflow: hidden;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+/* Light mode gradient-card hover: sky blue glow */
 .gradient-card:hover {
+  border-color: #7dd3fc;
+  box-shadow: 0 0 0 3px rgba(2,132,199,0.08), 0 8px 32px rgba(2,132,199,0.12);
+}
+/* Dark mode gradient-card hover: original indigo glow */
+.dark .gradient-card:hover {
   border-color: #818cf8;
   box-shadow: 0 0 0 3px rgba(99,102,241,0.08), 0 8px 32px rgba(99,102,241,0.12);
 }
@@ -72,7 +89,19 @@
   0% { background-position: -200% center; }
   100% { background-position: 200% center; }
 }
+
+/* Light mode shimmer: Sky Blue → Violet → Amber */
 .text-shimmer {
+  background: linear-gradient(90deg, #0284c7 0%, #7c3aed 30%, #f59e0b 55%, #7c3aed 75%, #0284c7 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShimmer 4s linear infinite;
+}
+
+/* Dark mode shimmer: original Indigo → Teal */
+.dark .text-shimmer {
   background: linear-gradient(90deg, #4338ca 0%, #6366f1 25%, #0d9488 50%, #6366f1 75%, #4338ca 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -94,39 +123,44 @@
 /* ─── Cursor Glow ─── */
 .cursor-glow {
   position: fixed; width:400px; height:400px; border-radius:50%;
-  background: radial-gradient(circle, rgba(99,102,241,0.08) 0%, transparent 70%);
+  /* Light mode: sky blue glow */
+  background: radial-gradient(circle, rgba(2,132,199,0.08) 0%, transparent 70%);
   pointer-events:none; z-index:0; transition:transform 0.12s ease-out;
 }
+/* Dark mode: original indigo glow (unchanged) */
 .dark .cursor-glow {
   background: radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 70%);
 }
 
 /* ─── Section Divider ─── */
+/* Light mode: sky blue → amber tones */
 .section-divider {
   height:1px;
-  background:linear-gradient(90deg, transparent, #c7d2fe 20%, #99f6e4 50%, #c7d2fe 80%, transparent);
+  background:linear-gradient(90deg, transparent, #bae6fd 20%, #fde68a 50%, #bae6fd 80%, transparent);
 }
+/* Dark mode: original indigo → teal (unchanged) */
 .dark .section-divider {
   background:linear-gradient(90deg, transparent, #312e8130 20%, #0d948830 50%, #312e8130 80%, transparent);
 }
 
 /* ─── Scrollbar ─── */
-::-webkit-scrollbar { width:5px; }
-::-webkit-scrollbar-track { background:transparent; }
-::-webkit-scrollbar-thumb { background:linear-gradient(180deg, #4338ca, #0d9488); border-radius:4px; }
-/* Global Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-track {
-  background: var(--bg);
-}
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+
+/* Light mode scrollbar: sky → amber */
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
+  background: linear-gradient(180deg, #0284c7, #f59e0b);
+  border-radius: 10px;
+}
+/* Dark mode scrollbar: original indigo → teal */
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #4338ca, #0d9488);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
   background: #6366f1;
 }
 
