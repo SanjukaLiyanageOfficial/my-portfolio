@@ -26,18 +26,6 @@ export const Hero = () => {
       {/* Background fine grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:28px_28px] pointer-events-none" />
 
-      {/* Animated gradient blobs */}
-      <motion.div
-        animate={{ scale: [1, 1.12, 1], opacity: [0.2, 0.35, 0.2] }}
-        transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[700px] h-[700px] bg-indigo-100/50 blur-[130px] rounded-full pointer-events-none"
-      />
-      <motion.div
-        animate={{ scale: [1, 1.18, 1], opacity: [0.1, 0.25, 0.1] }}
-        transition={{ duration: 11, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-        className="absolute bottom-0 right-1/4 w-[550px] h-[550px] bg-teal-50/70 blur-[110px] rounded-full pointer-events-none"
-      />
-
       {/* LEFT */}
       <div className="z-10 w-full max-w-3xl flex flex-col items-start lg:w-[55%]">
 
@@ -133,7 +121,7 @@ export const Hero = () => {
           className="mt-10 flex flex-col sm:flex-row gap-4 w-full"
         >
           <a href="https://github.com/SanjukaLiyanageOfficial" target="_blank" rel="noreferrer"
-            className="px-8 py-4 bg-ink hover:bg-primary text-white rounded-xl font-bold shadow-saas hover:shadow-[0_8px_30px_rgba(99,102,241,0.4)] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3">
+            className="px-8 py-4 bg-ink hover:bg-primary text-white dark:text-slate-900 rounded-xl font-bold shadow-saas hover:shadow-[0_8px_30px_rgba(99,102,241,0.4)] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3">
             <Terminal size={20} /> GitHub Profile
           </a>
           <a href="/SanjukaLiyanage_CV_2026.pdf" download="SanjukaLiyanage_CV_2026.pdf"
@@ -154,30 +142,6 @@ export const Hero = () => {
         transition={{ duration: 1, delay: 0.3 }}
         className="z-10 mt-6 lg:mt-0 lg:w-[42%] flex justify-center items-center relative select-none min-h-[280px] sm:min-h-[360px] lg:min-h-[500px]"
       >
-        {/* Outer slow-rotating glow ring */}
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-          className="absolute w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] lg:w-[420px] lg:h-[420px] rounded-full pointer-events-none"
-          style={{
-            background: 'conic-gradient(from 0deg, transparent 60%, rgba(99,102,241,0.35) 80%, transparent 100%)',
-            filter: 'blur(2px)',
-          }}
-        />
-        {/* Inner counter-rotating accent ring */}
-        <motion.div
-          animate={{ rotate: -360 }}
-          transition={{ duration: 14, repeat: Infinity, ease: 'linear' }}
-          className="absolute w-[180px] h-[180px] sm:w-[270px] sm:h-[270px] lg:w-[360px] lg:h-[360px] rounded-full pointer-events-none"
-          style={{
-            background: 'conic-gradient(from 180deg, transparent 65%, rgba(13,148,136,0.3) 85%, transparent 100%)',
-            filter: 'blur(2px)',
-          }}
-        />
-
-        {/* Ambient glow blob */}
-        <div className="absolute w-80 h-80 rounded-full bg-gradient-to-br from-indigo-200/60 to-teal-100/40 blur-[60px] pointer-events-none animate-glow-pulse" />
-
         {/* Floating tech icons */}
         <motion.div animate={{ y: [0, -14, 0] }} transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
           className="absolute top-4 left-0 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-indigo-100 text-primary z-20">
